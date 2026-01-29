@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #050505;
+}
+
+body {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #ffffff 0%, #00d4ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    margin: 60px 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: #ff9d00;
+    text-shadow: 0 0 20px rgba(255, 157, 0, 0.6),
+                 0 0 40px rgba(255, 157, 0, 0.2);
+    font-weight: 900;
+}
+
+.legend-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+p {
+    width: 90%;
+    max-width: 600px;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.status-zaliczony { background: #1b4d2e; color: #2ecc71; border: 1px solid #2ecc71; }
+.status-calosc { background: #1a2a4d; color: #4da6ff; border: 1px solid #0040ff; }
+.status-niezrobione { background: #4d1a1a; color: #ff4d4d; border: 1px solid #e74c3c; }
+.status-budowa { background: #4d441a; color: #ffd700; border: 1px solid #daa520; }
+
+div[class^="Linia"] {
+    background: #111;
+    margin: 20px auto; 
+    padding: 0;
+    width: 95%;
+    max-width: 700px; 
+    border-radius: 15px;
+    border: 1px solid #222;
+    border-bottom: 5px solid #333;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+div[class^="Linia"]:hover {
+    border-color: #ff3e3e;
+    transform: scale(1.02);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+li {
+    padding: 18px 20px;
+    border-bottom: 1px solid #222;
+    font-size: 1.2rem;
+    text-align: center; 
+    display: block;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li.status-zaliczony { color: #2ecc71; background: rgba(46, 204, 113, 0.05); }
+li.status-calosc { color: #4da6ff; background: rgba(0, 64, 255, 0.05); }
+li.status-niezrobione { color: #ff4d4d; background: rgba(231, 76, 60, 0.05); }
+li.status-budowa { color: #ffd700; background: rgba(255, 215, 0, 0.05); }
