@@ -65,6 +65,7 @@ p {
 .status-calosc { background: #1a2a4d; color: #4da6ff; border: 1px solid #0040ff; }
 .status-niezrobione { background: #4d1a1a; color: #ff4d4d; border: 1px solid #e74c3c; }
 .status-budowa { background: #4d441a; color: #ffd700; border: 1px solid #daa520; }
+.status-planowanie { background: #4d1a3a; color: #ff69b4; border: 1px solid #ff69b4; }
 
 div[class^="Linia"] {
     background: #111;
@@ -107,3 +108,4 @@ li.status-zaliczony { color: #2ecc71; background: rgba(46, 204, 113, 0.05); }
 li.status-calosc { color: #4da6ff; background: rgba(0, 64, 255, 0.05); }
 li.status-niezrobione { color: #ff4d4d; background: rgba(231, 76, 60, 0.05); }
 li.status-budowa { color: #ffd700; background: rgba(255, 215, 0, 0.05); }
+li.status-planowanie { color: #ff69b4; background: rgba(255, 105, 180, 0.05); }
