@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autobusy Miejskie</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <h1>Autobusy miejskie pętle</h1>
@@ -14,6 +15,7 @@
     <p class="status-budowa">Na Złoto linia w trakcie budowy(w krótce)</p>
     <p class="status-planowanie">Na różowo linia jest w planach do jazdy</p>
     <h2>LINIE AUTOBOSÓW</h2>
+    
     <div class="Linia1">
     <ul>
         <li class="status-niezrobione">Linia 1 - Kierunek: Grabówka</li>
@@ -379,5 +381,11 @@
             <li class="status-niezrobione">Linia 202 - Kierunek: Wojszki</li>
         </ul>
     </div>
+    <div style="margin: 20px 0; padding: 15px; border: 2px solid #ffffff; border-radius: 8px; text-align: center; background-color: #000000;">
+    <button id="losujBtn" style="padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 5px;">
+        Losuj trasę do przejechania
+    </button>
+    <h3 id="wynikLosowania" style="margin-top: 15px; color: #ffffff;">Kliknij przycisk, aby wylosować linię</h3>
+</div>
 </body>
 </html>
